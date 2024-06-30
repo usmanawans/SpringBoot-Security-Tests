@@ -17,7 +17,7 @@ public class CustomAuthenticationProvider implements AuthenticationProvider {
         String username = authentication.getName();
         String password = String.valueOf(authentication.getCredentials());
 
-        if("123".equals(username)){
+        if("111".equals(username)){
             return new UsernamePasswordAuthenticationToken(username, password, commaSeparatedStringToAuthorityList("USER"));
         } else if("999".equals(username)) {
             return new UsernamePasswordAuthenticationToken(username, password, commaSeparatedStringToAuthorityList("ADMIN"));

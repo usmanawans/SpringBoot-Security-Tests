@@ -35,7 +35,7 @@ public class SecurityConfig {
 
         http.userDetailsService(
                 new InMemoryUserDetailsManager(List.of(
-                        User.withUsername("123").password("123").authorities("READ").build(),
+                        User.withUsername("111").password("111").authorities("READ").build(),
                         User.withUsername("999").password("999").authorities("READ", "WRITE").build()
                 ))
         );
